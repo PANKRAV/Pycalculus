@@ -4,11 +4,11 @@ from typing import Callable, List, Tuple
 
 
 
-
+DEFAULTS = ("Reals", "Integers", "Naturals", "Empty")
 class Set(object) :
     def __new__(cls, *args, **kwargs) :
         default_type = None
-        if "Reals" in args or "Integers" in args or "Naturals" in args or "Empty" in args:
+        if args[0] in DEFAULTS :
             args = list(args)
             default_type = args.pop(0)
             args = tuple(args)                

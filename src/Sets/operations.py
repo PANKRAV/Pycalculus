@@ -10,5 +10,9 @@ def merge(ctx1 : defaults.Set, ctx2 : defaults.Set) :
     return
 
 
-def senction(ctx1 : defaults.Set, ctx2 : defaults.Set) :
+def Intersenction(ctx1 : defaults.Set, ctx2 : defaults.Set) :
+    return
+
+
+def add(ctx1 : defaults.Set, ctx2 : defaults.Set) :
     return
